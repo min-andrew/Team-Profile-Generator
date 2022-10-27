@@ -1,4 +1,4 @@
-function generateMarkdown(data) {
+function generatehtml(data) {
     return `# ${data.title}
     ${renderLicenseSection(data.license)}
   
@@ -42,4 +42,4 @@ function generateMarkdown(data) {
   `;
   };
   
-  module.exports = generateMarkdown;
+  module.exports = generatehtml;
