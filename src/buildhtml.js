@@ -34,7 +34,7 @@ const engGen = engineer => {
   return `
   <li id="card">
         <div id="card-header">
-          <h2>{engineer.name}</h2>
+          <h2>${engineer.name}</h2>
           <h3>Engineer</h3>
         </div>
         <div id="card-body">
