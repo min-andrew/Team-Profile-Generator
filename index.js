@@ -138,7 +138,7 @@ function engineertime() {
 };
 
 function starthtml() {
-    fs.writeFileSync('../dist/index.html', buildhtml(teamArray), (err) => err ? console.error(err) : console.log('Generating HTML...'));
+    fs.appendFile('./dist/index.html', buildhtml(dreamTeam), (err) => err ? console.error(err) : console.log('Generating HTML...'));
 };
 
 managertime();

@@ -46,23 +46,23 @@ const engGen = engineer => {
   `
 };
 
-const buildHTML = (data) => {
+const buildhtml = (data) => {
   employeeCards = [];
 
   for (let i = 0; i < data.length; i++) {
     const employee = data[i];
     switch (employee.getRole()) {
       case 'Manager':
-        const managerCard = generateManager(employee);
-        pageArray.push(managerCard);
+        const manCard = manGen(employee);
+        employeeCards.push(manCard);
         break
       case 'Engineer':
-        const engineerCard = generateEngineer(employee);
-        pageArray.push(engineerCard);
+        const engCard = engGen(employee);
+        employeeCards.push(engCard);
         break
       case 'Intern':
-        const internCard = generateIntern(employee);
-        pageArray.push(internCard);
+        const intCard = intGen(employee);
+        employeeCards.push(intCard);
         break
     };
   };
